@@ -6,8 +6,7 @@
 ## Development
 
 ```sh
-$ pnpm i --frozen-lockfile
-$ pnpm prepare
+$ pnpm i
 ```
 
 ```sh
