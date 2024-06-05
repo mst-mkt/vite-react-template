@@ -6,9 +6,9 @@
 ## Development
 
 ```sh
-$ pnpm i
+pnpm i
 ```
 
 ```sh
-$ pnpm dev
+pnpm dev
 ```
