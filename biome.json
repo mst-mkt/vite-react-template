@@ -5,7 +5,7 @@
   },
   "linter": {
     "enabled": true,
-    "ignore": ["./src/**/*.d.ts", "./src/**/*.gen.ts"],
+    "ignore": ["./src/**/*.d.ts", "./src/**/*.gen.ts", "./src/index.css"],
     "rules": {
       "recommended": true,
       "complexity": {
