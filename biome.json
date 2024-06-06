@@ -54,6 +54,9 @@
       "suspicious": {
         "noConsoleLog": "warn",
         "noEmptyBlockStatements": "error"
+      },
+      "nursery": {
+        "useSortedClasses": "error"
       }
     }
   },
