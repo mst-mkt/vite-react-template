@@ -5,6 +5,7 @@
   },
   "linter": {
     "enabled": true,
+    "ignore": ["./src/**/*.d.ts", "./src/**/*.gen.ts"],
     "rules": {
       "recommended": true,
       "complexity": {
@@ -79,7 +80,7 @@
       "enabled": true,
       "quoteStyle": "single",
       "jsxQuoteStyle": "double",
-      "trailingComma": "all",
+      "trailingCommas": "all",
       "semicolons": "asNeeded",
       "arrowParentheses": "always",
       "indentStyle": "space",
