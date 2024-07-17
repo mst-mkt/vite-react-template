@@ -3,5 +3,10 @@ import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [react(), TanStackRouterVite()],
+  plugins: [
+    react(),
+    TanStackRouterVite({
+      generatedRouteTree: 'src/lib/tanstack-router/routeTree.gen.ts',
+    }),
+  ],
 })
