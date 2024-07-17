@@ -34,8 +34,6 @@
     "vite": "^5.3.4"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "biome check --apply"
-    ]
+    "src/**/*.{ts,tsx}": ["biome check --write ./src/"]
   }
 }
