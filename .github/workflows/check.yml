@@ -20,5 +20,5 @@ jobs:
         with:
           version: 8
       - run: pnpm install
-      - run: pnpm run lint
+      - run: pnpm run check
       - run: pnpm run typecheck
