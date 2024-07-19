@@ -5,38 +5,38 @@
 // Import Routes
 
 import { Route as rootRoute } from './../../routes/__root'
-import { Route as AppImport } from './../../routes/_app'
-import { Route as AppIndexImport } from './../../routes/_app/index'
+import { Route as LayoutImport } from './../../routes/_layout'
+import { Route as LayoutIndexImport } from './../../routes/_layout/index'
 
 // Create/Update Routes
 
-const AppRoute = AppImport.update({
-  id: '/_app',
+const LayoutRoute = LayoutImport.update({
+  id: '/_layout',
   getParentRoute: () => rootRoute,
 } as any)
 
-const AppIndexRoute = AppIndexImport.update({
+const LayoutIndexRoute = LayoutIndexImport.update({
   path: '/',
-  getParentRoute: () => AppRoute,
+  getParentRoute: () => LayoutRoute,
 } as any)
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/_app': {
-      id: '/_app'
+    '/_layout': {
+      id: '/_layout'
       path: ''
       fullPath: ''
-      preLoaderRoute: typeof AppImport
+      preLoaderRoute: typeof LayoutImport
       parentRoute: typeof rootRoute
     }
-    '/_app/': {
-      id: '/_app/'
+    '/_layout/': {
+      id: '/_layout/'
       path: '/'
       fullPath: '/'
-      preLoaderRoute: typeof AppIndexImport
-      parentRoute: typeof AppImport
+      preLoaderRoute: typeof LayoutIndexImport
+      parentRoute: typeof LayoutImport
     }
   }
 }
@@ -44,7 +44,7 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export const routeTree = rootRoute.addChildren({
-  AppRoute: AppRoute.addChildren({ AppIndexRoute }),
+  LayoutRoute: LayoutRoute.addChildren({ LayoutIndexRoute }),
 })
 
 /* ROUTE_MANIFEST_START
@@ -53,18 +53,18 @@ export const routeTree = rootRoute.addChildren({
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/_app"
+        "/_layout"
       ]
     },
-    "/_app": {
-      "filePath": "_app.tsx",
+    "/_layout": {
+      "filePath": "_layout.tsx",
       "children": [
-        "/_app/"
+        "/_layout/"
       ]
     },
-    "/_app/": {
-      "filePath": "_app/index.tsx",
-      "parent": "/_app"
+    "/_layout/": {
+      "filePath": "_layout/index.tsx",
+      "parent": "/_layout"
     }
   }
 }
