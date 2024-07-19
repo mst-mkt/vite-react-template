@@ -1,0 +1,28 @@
+name: PR Template Form
+description: Create Pull Request
+body:
+  - type: input
+    id: issue-number
+    attributes:
+      label: Issue
+      description: Issue の番号を入力してください。
+      placeholder: fill in issue number
+      value: \#
+  - type: textarea
+    id: description
+    attributes:
+      label: 内容
+      description: 変更した内容を入力してください。
+      placeholder: fill in feature details
+  - type: textarea
+    id: sample-image
+    attributes:
+      label: サンプル画像
+      description: サンプル画像か動画があれば貼り付けてください。
+      placeholder: fill in sample image or video
+  - type: textarea
+    id: note
+    attributes:
+      label: 備考
+      description: 他に何かあれば記入してください。
+      placeholder: fill in note
