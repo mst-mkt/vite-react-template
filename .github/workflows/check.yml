@@ -13,12 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 18
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - run: pnpm install
-      - run: pnpm run check
-      - run: pnpm run typecheck
+          node-version: 20
+      - name: Setup pnpm
+        run: corepack enable
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+      - name: Check lint and format
+        run: pnpm biome ci ./src/ --reporter=github
+      - name: Type check
+        run: pnpm run typecheck
