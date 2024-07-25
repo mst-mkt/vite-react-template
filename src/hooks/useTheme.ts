@@ -1,10 +1,9 @@
 import { useAtom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 import { useCallback, useEffect } from 'react'
+import { THEMES } from '../constants/theme'
 
-const themes = ['light', 'dark'] as const
-
-type Theme = (typeof themes)[number]
+type Theme = (typeof THEMES)[number]
 
 const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
 
@@ -14,7 +13,7 @@ export const useTheme = () => {
   const [theme, setTheme] = useAtom(themeAtom)
 
   useEffect(() => {
-    document.body.classList.remove(...themes)
+    document.body.classList.remove(...THEMES)
     document.body.classList.add(theme)
   }, [theme])
 
