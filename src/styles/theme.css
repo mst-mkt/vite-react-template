@@ -1,5 +1,7 @@
 @layer base {
   :root {
+    --content-max-width: 600px;
+
     /* oklch(100% 0 0) */
     --background: 100% 0 0;
     /* oklch(20% 0.04 256) */

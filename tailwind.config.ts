@@ -30,6 +30,9 @@ const config = {
   darkMode: 'class',
   theme: {
     extend: {
+      spacing: {
+        "max-content": "var(--content-max-width)",
+      },
       colors: {
         background: {
           DEFAULT: oklchAlpha`background`,
