@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  define: {
+    __UPDATED_YEAR__: new Date().getFullYear(),
+  },
   plugins: [
     react(),
     TanStackRouterVite({
