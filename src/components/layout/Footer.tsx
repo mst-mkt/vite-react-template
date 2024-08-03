@@ -1,5 +1,36 @@
-import { IconBrandGithub } from '@tabler/icons-react'
-import { PROJECT_AUTHOR, PROJECT_NAME, PROJECT_REPOSITORY_URL } from '../../constants/project'
+import {
+  type Icon,
+  IconBrandGithub,
+  IconBrandTwitter,
+  IconBrandX,
+  IconLink,
+} from '@tabler/icons-react'
+import { match } from 'ts-pattern'
+import { PROJECT_AUTHOR, PROJECT_LINKS, PROJECT_NAME } from '../../constants/project'
+
+type UrlInfo = {
+  icon: Icon
+  label: string
+  url: string
+}
+
+const getLinkIcon = (url: string) => {
+  return match(url)
+    .returnType<UrlInfo>()
+    .when(
+      (url) => url.startsWith('https://github.com/'),
+      (url) => ({ icon: IconBrandGithub, label: 'GitHub', url }),
+    )
+    .when(
+      (url) => url.startsWith('https://x.com/'),
+      (url) => ({ icon: IconBrandX, label: 'X', url }),
+    )
+    .when(
+      (url) => url.startsWith('https://twitter.com/'),
+      (url) => ({ icon: IconBrandTwitter, label: 'Twitter', url }),
+    )
+    .otherwise((url) => ({ icon: IconLink, label: url, url }))
+}
 
 export const Footer = () => (
   <footer className="mx-auto flex w-full max-w-max-content flex-col gap-y-2 px-6 py-4">
@@ -9,12 +40,15 @@ export const Footer = () => (
     </div>
     <ul>
       <li>
-        <a
-          href={PROJECT_REPOSITORY_URL}
-          className="flex items-center gap-x-1 transition-colors hover:text-accent"
-        >
-          <IconBrandGithub size={16} /> GitHub
-        </a>
+        {PROJECT_LINKS.map(getLinkIcon).map((url) => (
+          <a
+            key={url.label}
+            href={url.url}
+            className="flex items-center gap-x-1 transition-colors hover:text-accent"
+          >
+            <url.icon size={16} /> {url.label}
+          </a>
+        ))}
       </li>
     </ul>
     <p className="text-foreground-300 text-sm">
