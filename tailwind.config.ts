@@ -1,6 +1,4 @@
 import aspectRatio from '@tailwindcss/aspect-ratio'
-import forms from '@tailwindcss/forms'
-import typography from '@tailwindcss/typography'
 import scrollbar from 'tailwind-scrollbar'
 import type { Config } from 'tailwindcss'
 
@@ -55,8 +53,6 @@ const config = {
   },
   plugins: [
     scrollbar({ nocompatible: true, preferredStrategy: 'pseudoelements' }),
-    typography,
-    forms,
     aspectRatio,
   ],
 } satisfies Config
