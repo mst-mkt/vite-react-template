@@ -6,6 +6,9 @@ export default defineConfig({
   define: {
     __UPDATED_YEAR__: new Date().getFullYear(),
   },
+  server:{
+    port: 3000,
+  },
   plugins: [
     react(),
     TanStackRouterVite({
