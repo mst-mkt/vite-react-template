@@ -53,7 +53,12 @@ export const Footer = () => (
     </ul>
     <p className="text-foreground-300 text-sm">
       {/* biome-ignore lint/correctness/noUndeclaredVariables: its declared in `src/types/vite-defined.d.ts` */}
-      &copy; {__UPDATED_YEAR__} {PROJECT_AUTHOR.join(', ')}
+      &copy; {__UPDATED_YEAR__}{' '}
+      {PROJECT_AUTHOR.map((author) => (
+        <a key={author} href={`https://github.com/${author}`} className="hover:underline">
+          {author}
+        </a>
+      ))}
     </p>
   </footer>
 )
