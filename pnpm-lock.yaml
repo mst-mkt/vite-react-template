@@ -20,9 +20,6 @@ importers:
       '@tanstack/router-devtools':
         specifier: ^1.82.2
         version: 1.82.2(@tanstack/react-router@1.82.2(@tanstack/router-generator@1.81.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tanstack/router-valibot-adapter':
-        specifier: ^1.81.5
-        version: 1.81.5(@tanstack/react-router@1.82.2(@tanstack/router-generator@1.81.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(valibot@1.0.0-beta.8(typescript@5.7.2))
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -836,13 +833,6 @@ packages:
         optional: true
       webpack:
         optional: true
-
-  '@tanstack/router-valibot-adapter@1.81.5':
-    resolution: {integrity: sha512-jBloM5LPQRmro8cGF1+RQUYiZb32ez0InYbtHha2wnMessgxthtQhOn1Beu0ipjhWFU0OOK8f0/na5jKiGIuVA==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      '@tanstack/react-router': '>=1.43.2'
-      valibot: ^1.0.0 || ^1.0.0-beta.5 || ^1.0.0-rc
 
   '@tanstack/router-vite-plugin@1.81.9':
     resolution: {integrity: sha512-ekF/XmkaKuERLpxFF1PPVTFnpIcD5lRVqTvss0Ss2Or/GT+s1NMT0LlourMSm14Mm9WNhtWhG0gmhCQadhcRUw==}
@@ -2209,11 +2199,6 @@ snapshots:
       vite: 5.4.11(@types/node@22.9.3)
     transitivePeerDependencies:
       - supports-color
-
-  '@tanstack/router-valibot-adapter@1.81.5(@tanstack/react-router@1.82.2(@tanstack/router-generator@1.81.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(valibot@1.0.0-beta.8(typescript@5.7.2))':
-    dependencies:
-      '@tanstack/react-router': 1.82.2(@tanstack/router-generator@1.81.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      valibot: 1.0.0-beta.8(typescript@5.7.2)
 
   '@tanstack/router-vite-plugin@1.81.9(vite@5.4.11(@types/node@22.9.3))':
     dependencies:
