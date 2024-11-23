@@ -57,3 +57,29 @@ with applying fixes:
 ```sh
 pnpm fix
 ```
+
+## Deployment
+
+1. Create cloudflare pages project
+
+```bash
+pnpm wrangler pages project create
+```
+
+> [!NOTE]
+> When deploying with GitHub Actions, the repository name and project name must be the same. \
+> If you want to change it, edit the workflow yml.
+
+2. Set secrets about cloudflare
+
+Set some secrets in the repository secrets ([https://github.com/\[username\]/\[your-repo\]/settings/secrets/actions](https://github.com/username/your-repo/settings/secrets/actions)). \
+Or you can use the gh cli.
+
+```bash
+gh secret set CLOUDFLARE_ACCOUNT_ID --body "<your-account-id>"
+gh secret set CLOUDFLARE_API_TOKEN --body "<your-api-token>"
+```
+
+3. Deploy
+
+Run the workflow manually or push to the main branch.
