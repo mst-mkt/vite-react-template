@@ -14,19 +14,17 @@ Template for Vite and React projects.
 | React                  | UI library                |
 | Tailwind CSS           | CSS framework             |
 | @tanstack/react-router | Routing library           |
-| Jotai                  | State management library  |
-| zod                    | Schema validation library |
+| valibot                | Schema validation library |
 | react-helmet-async     | Dynamic meta tags         |
 | @tabler/icons-react    | Icon component library    |
 
 ### For development
 
-| Name        | Purpose                     |
-| ----------- | --------------------------- |
-| pnpm        | Package manager             |
-| biome       | Formatter and linter        |
-| husky       | Git hooks                   |
-| lint-staged | Run linters on staged files |
+| Name     | Purpose              |
+| -------- | -------------------- |
+| pnpm     | Package manager      |
+| biome    | Formatter and linter |
+| lefthook | Git hooks            |
 
 ## Development
 
