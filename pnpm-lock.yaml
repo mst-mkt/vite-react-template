@@ -44,7 +44,7 @@ importers:
         version: 1.9.4
       '@tailwindcss/aspect-ratio':
         specifier: ^0.4.2
-        version: 0.4.2(tailwindcss@4.0.0-beta.4)
+        version: 0.4.2(tailwindcss@4.0.0-beta.6)
       '@tailwindcss/vite':
         specifier: 4.0.0-beta.2
         version: 4.0.0-beta.2(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(svelte@5.2.7)(typescript@5.7.2)(vite@6.0.1(@types/node@22.9.3)(jiti@2.4.0)(lightningcss@1.28.1)(tsx@4.19.2)(yaml@2.6.1))
@@ -70,8 +70,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(react@18.3.1)
       tailwindcss:
-        specifier: 4.0.0-beta.4
-        version: 4.0.0-beta.4
+        specifier: 4.0.0-beta.6
+        version: 4.0.0-beta.6
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
@@ -1410,8 +1410,8 @@ packages:
   tailwindcss@4.0.0-beta.2:
     resolution: {integrity: sha512-uZ+vgVsy6i18Glc3XYMkTq7dl4GsU4m8X8qRTVlU4+g8Uit7g+wttwfDCl3p+ZOq5KCB09th9XgVDx1zFLCeHA==}
 
-  tailwindcss@4.0.0-beta.4:
-    resolution: {integrity: sha512-mkjpwMyaHCa3L5HmRjYyY8w8D+7brxwbM7YQxH8QeEFtCURd5fvdHIC9TEpIaL1X49vhl8cuOFY6Nhi6sCsI5w==}
+  tailwindcss@4.0.0-beta.6:
+    resolution: {integrity: sha512-eCCuMk3H65w4J/QWkjxfeWoBSKbCD3E6Uj2LA6Xkkl4eMa1MXuwVpIU1RXcLIp+BVsXGEZMP7i7uJig7KxfAXQ==}
 
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
@@ -2026,9 +2026,9 @@ snapshots:
 
   '@tabler/icons@3.18.0': {}
 
-  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@4.0.0-beta.4)':
+  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@4.0.0-beta.6)':
     dependencies:
-      tailwindcss: 4.0.0-beta.4
+      tailwindcss: 4.0.0-beta.6
 
   '@tailwindcss/node@4.0.0-beta.2':
     dependencies:
@@ -2674,7 +2674,7 @@ snapshots:
 
   tailwindcss@4.0.0-beta.2: {}
 
-  tailwindcss@4.0.0-beta.4: {}
+  tailwindcss@4.0.0-beta.6: {}
 
   tapable@2.2.1: {}
 
