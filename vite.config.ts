@@ -12,6 +12,11 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
+  resolve: {
+    alias: {
+      '@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
+    }
+  },
   plugins: [
     mkcert(),
     react(),
