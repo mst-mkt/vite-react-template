@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@mst-mkt/js-config": "npm:@jsr/mst-mkt__js-config@^0.0.3",
-    "@tabler/icons-react": "3.18.0",
+    "@tabler/icons-react": "^3.24.0",
     "@tanstack/react-router": "^1.87.1",
     "@tanstack/router-devtools": "^1.82.8",
     "clsx": "^2.1.1",
