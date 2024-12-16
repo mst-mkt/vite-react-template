@@ -44,7 +44,7 @@ importers:
         version: 1.9.4
       '@tailwindcss/aspect-ratio':
         specifier: ^0.4.2
-        version: 0.4.2(tailwindcss@4.0.0-beta.6)
+        version: 0.4.2(tailwindcss@4.0.0-beta.7)
       '@tailwindcss/vite':
         specifier: 4.0.0-beta.6
         version: 4.0.0-beta.6(vite@6.0.3(@types/node@22.10.1)(jiti@2.4.0)(lightningcss@1.28.1)(tsx@4.19.2)(yaml@2.6.1))
@@ -70,8 +70,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(react@18.3.1)
       tailwindcss:
-        specifier: 4.0.0-beta.6
-        version: 4.0.0-beta.6
+        specifier: 4.0.0-beta.7
+        version: 4.0.0-beta.7
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
@@ -1325,6 +1325,9 @@ packages:
   tailwindcss@4.0.0-beta.6:
     resolution: {integrity: sha512-eCCuMk3H65w4J/QWkjxfeWoBSKbCD3E6Uj2LA6Xkkl4eMa1MXuwVpIU1RXcLIp+BVsXGEZMP7i7uJig7KxfAXQ==}
 
+  tailwindcss@4.0.0-beta.7:
+    resolution: {integrity: sha512-9JXrCC5UVt2bjV9lrjO+B7MPY+bgpWCf5sPbu+Ih5rGvGE6STwA94N6Ah1xMa0Avzp48fB/S1l0vByTp2HEzAw==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -1935,9 +1938,9 @@ snapshots:
 
   '@tabler/icons@3.24.0': {}
 
-  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@4.0.0-beta.6)':
+  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@4.0.0-beta.7)':
     dependencies:
-      tailwindcss: 4.0.0-beta.6
+      tailwindcss: 4.0.0-beta.7
 
   '@tailwindcss/node@4.0.0-beta.6':
     dependencies:
@@ -2506,6 +2509,8 @@ snapshots:
   tailwind-merge@2.5.5: {}
 
   tailwindcss@4.0.0-beta.6: {}
+
+  tailwindcss@4.0.0-beta.7: {}
 
   tapable@2.2.1: {}
 
