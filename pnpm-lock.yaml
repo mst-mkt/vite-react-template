@@ -36,8 +36,8 @@ importers:
         specifier: ^5.6.0
         version: 5.6.0
       valibot:
-        specifier: 1.0.0-beta.11
-        version: 1.0.0-beta.11(typescript@5.7.2)
+        specifier: 1.0.0-beta.12
+        version: 1.0.0-beta.12(typescript@5.7.2)
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -1383,8 +1383,8 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  valibot@1.0.0-beta.11:
-    resolution: {integrity: sha512-Ztl5Iks1Ql7Z6CwkS5oyqguN3G8tmUiNlsHpqbDt6DLMpm+eu+n8Q7f921gI3uHvNZ8xDVkd4cEJP5t+lELOfw==}
+  valibot@1.0.0-beta.12:
+    resolution: {integrity: sha512-j3WIxJ0pmUFMfdfUECn3YnZPYOiG0yHYcFEa/+RVgo0I+MXE3ToLt7gNRLtY5pwGfgNmsmhenGZfU5suu9ijUA==}
     peerDependencies:
       typescript: '>=5'
     peerDependenciesMeta:
@@ -2567,7 +2567,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  valibot@1.0.0-beta.11(typescript@5.7.2):
+  valibot@1.0.0-beta.12(typescript@5.7.2):
     optionalDependencies:
       typescript: 5.7.2
 
