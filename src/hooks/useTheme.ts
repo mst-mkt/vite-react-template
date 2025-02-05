@@ -15,9 +15,9 @@ export const useTheme = () => {
   const [theme, setTheme] = useLocalStorage<Theme>('theme', isDarkTheme ? 'dark' : 'light')
 
   const setThemeClassNames = useCallback((theme?: Theme) => {
-    document.body.classList.remove(...THEMES)
+    document.documentElement.classList.remove(...THEMES)
     if (theme !== undefined) {
-      document.body.classList.add(theme)
+      document.documentElement.classList.add(theme)
     }
   }, [])
 
