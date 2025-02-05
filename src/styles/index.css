@@ -4,3 +4,9 @@
 @variant dark (&:where(.dark, .dark *));
 
 @plugin "@tailwindcss//aspect-ratio";
+@plugin "tailwind-scrollbar" {
+  /* biome-ignore lint/correctness/noUnknownProperty: this is plugin config */
+  preferredStrategy: 'pseudoelements';
+  /* biome-ignore lint/correctness/noUnknownProperty: this is plugin config */
+  nocompatible: true;
+}
