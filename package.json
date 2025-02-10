@@ -32,7 +32,7 @@
     "@types/node": "^22.13.1",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react-swc": "^3.7.2",
+    "@vitejs/plugin-react-swc": "^3.8.0",
     "lefthook": "^1.10.10",
     "react-helmet-async": "^2.0.5",
     "tailwind-scrollbar": "^4.0.0",
