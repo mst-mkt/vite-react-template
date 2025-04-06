@@ -70,8 +70,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(react@18.3.1)
       tailwind-scrollbar:
-        specifier: ^4.0.0
-        version: 4.0.0(react@18.3.1)(tailwindcss@4.0.3)
+        specifier: ^4.0.2
+        version: 4.0.2(react@18.3.1)(tailwindcss@4.0.3)
       tailwindcss:
         specifier: 4.0.3
         version: 4.0.3
@@ -1366,8 +1366,8 @@ packages:
   tailwind-merge@3.0.2:
     resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
 
-  tailwind-scrollbar@4.0.0:
-    resolution: {integrity: sha512-elqx9m09VHY8gkrMiyimFO09JlS3AyLFXT0eaLaWPi7ImwHlbZj1ce/AxSis2LtR+ewBGEyUV7URNEMcjP1Z2w==}
+  tailwind-scrollbar@4.0.2:
+    resolution: {integrity: sha512-wAQiIxAPqk0MNTPptVe/xoyWi27y+NRGnTwvn4PQnbvB9kp8QUBiGl/wsfoVBHnQxTmhXJSNt9NHTmcz9EivFA==}
     engines: {node: '>=12.13.0'}
     peerDependencies:
       tailwindcss: 4.x
@@ -2593,7 +2593,7 @@ snapshots:
 
   tailwind-merge@3.0.2: {}
 
-  tailwind-scrollbar@4.0.0(react@18.3.1)(tailwindcss@4.0.3):
+  tailwind-scrollbar@4.0.2(react@18.3.1)(tailwindcss@4.0.3):
     dependencies:
       prism-react-renderer: 2.4.1(react@18.3.1)
       tailwindcss: 4.0.3
