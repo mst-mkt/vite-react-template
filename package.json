@@ -13,7 +13,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mst-mkt/js-config": "npm:@jsr/mst-mkt__js-config@^0.0.3",
     "@tabler/icons-react": "^3.31.0",
     "@tanstack/react-router": "^1.117.1",
     "@tanstack/router-devtools": "^1.117.1",
@@ -26,6 +25,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@mst-mkt/js-config": "jsr:^0.1.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/vite": "4.0.6",
     "@tanstack/router-vite-plugin": "^1.117.2",
