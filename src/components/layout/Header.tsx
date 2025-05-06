@@ -1,7 +1,7 @@
 import { IconBrightness } from '@tabler/icons-react'
 import { Link } from '@tanstack/react-router'
 import { PROJECT_NAME } from '../../constants/project'
-import { useTheme } from '../../hooks/useTheme'
+import { useTheme } from '../../hooks/use-theme'
 
 export const Header = () => {
   const { toggleTheme } = useTheme()

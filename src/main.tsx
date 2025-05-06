@@ -4,7 +4,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import { App } from './App.tsx'
 import { Head } from './components/shared/Head.tsx'
 import { PROJECT_NAME } from './constants/project.ts'
-import { setThemeWithoutRender } from './hooks/useTheme.ts'
+import { setThemeWithoutRender } from './hooks/use-theme.ts'
 import './styles/index.css'
 
 const rootDom = document.getElementById('root')
