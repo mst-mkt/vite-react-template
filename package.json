@@ -10,7 +10,9 @@
     "check": "biome check ./src/",
     "fix": "biome check --write ./src/",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "wrangler dev",
+    "predeploy": "pnpm build",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.31.0",
@@ -39,7 +41,8 @@
     "tailwindcss": "4.1.6",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
-    "vite-plugin-mkcert": "^1.17.8"
+    "vite-plugin-mkcert": "^1.17.8",
+    "wrangler": "^4.15.1"
   },
   "volta": {
     "node": "22.11.0"
