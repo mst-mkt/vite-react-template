@@ -33,7 +33,7 @@ const getLinkIcon = (url: string) => {
 }
 
 export const Footer = () => (
-  <footer className="mx-auto flex w-full max-w-max-content flex-col gap-y-2 px-6 py-4">
+  <footer className="mx-auto flex w-full max-w-[800px] flex-col gap-y-2 px-6 py-4">
     <div className="flex w-full items-center gap-x-4">
       <p className="font-bold text-lg">{PROJECT_NAME}</p>
       <div className="h-[1px] grow bg-gray-400" />

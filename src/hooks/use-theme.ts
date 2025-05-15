@@ -1,6 +1,15 @@
 import { useCallback, useLayoutEffect, useSyncExternalStore } from 'react'
 import { THEMES, THEME_STORAGE_KEY, type Theme } from '../constants/theme'
 
+export const loadTheme = () => {
+  const storageValue = window.localStorage.getItem(THEME_STORAGE_KEY)
+  if (storageValue && THEMES.includes(storageValue as Theme)) {
+    document.documentElement.classList.add(storageValue)
+  } else {
+    document.documentElement.classList.add(THEMES[0])
+  }
+}
+
 export const useTheme = () => {
   const theme = useSyncExternalStore(
     (callback) => {

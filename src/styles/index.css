@@ -1,12 +1,20 @@
-@import './theme';
-@import 'tailwindcss';
+@import './tailwind.css';
 
-@variant dark (&:where(.dark, .dark *));
+:root {
+  --background: oklch(100% 0 0);
+  --foreground: oklch(20% 0.04 256);
+  --accent: oklch(64% 0.24 256);
+}
 
-@plugin "@tailwindcss//aspect-ratio";
-@plugin "tailwind-scrollbar" {
-  /* biome-ignore lint/correctness/noUnknownProperty: this is plugin config */
-  preferredStrategy: 'pseudoelements';
-  /* biome-ignore lint/correctness/noUnknownProperty: this is plugin config */
-  nocompatible: true;
+.dark:root {
+  --background: oklch(20% 0 0);
+  --foreground: oklch(90% 0 256);
+  --accent: oklch(64% 0.24 256);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    @apply scrollbar-thin scrollbar-thumb-background-100 scrollbar-thumb-rounded-full scrollbar-track-transparent;
+  }
 }

@@ -1,11 +1,21 @@
-@theme {
-  /* spacing */
-  --spacing-max-content: 600px;
+@import 'tailwindcss';
 
-  /* color */
-  --color-background: oklch(var(--background));
-  --color-foreground: oklch(var(--foreground));
-  --color-accent: oklch(var(--accent));
+@source "../app/";
+@source "../components/";
+@custom-variant dark (&:is(.dark *));
+
+@plugin "@tailwindcss/aspect-ratio";
+@plugin "tailwind-scrollbar" {
+  /* biome-ignore lint/correctness/noUnknownProperty: this is plugin config */
+  preferredStrategy: 'pseudoelements';
+  /* biome-ignore lint/correctness/noUnknownProperty: this is plugin config */
+  nocompatible: true;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
 
   --color-background-50: color-mix(in srgb, var(--color-background), var(--color-foreground) 5%);
   --color-background-100: color-mix(in srgb, var(--color-background), var(--color-foreground) 10%);
@@ -40,23 +50,4 @@
   --color-accent-800: color-mix(in srgb, var(--color-accent), var(--color-foreground) 60%);
   --color-accent-900: color-mix(in srgb, var(--color-accent), var(--color-foreground) 80%);
   --color-accent-950: color-mix(in srgb, var(--color-accent), var(--color-background) 90%);
-}
-
-@layer base {
-  body {
-    @apply bg-background text-foreground;
-    @apply scrollbar-thin scrollbar-thumb-background-200 scrollbar-thumb-rounded-full scrollbar-track-transparent;
-  }
-}
-
-:root {
-  --background: 100% 0 0;
-  --foreground: 20% 0.04 256;
-  --accent: 64% 0.24 256;
-}
-
-.dark:root {
-  --background: 20% 0 0;
-  --foreground: 90% 0 256;
-  --accent: 64% 0.24 256;
 }

@@ -4,13 +4,13 @@ import { HelmetProvider } from 'react-helmet-async'
 import { App } from './App.tsx'
 import { Head } from './components/shared/Head.tsx'
 import { PROJECT_NAME } from './constants/project.ts'
-import { setThemeWithoutRender } from './hooks/use-theme.ts'
 import './styles/index.css'
+import { loadTheme } from './hooks/use-theme.ts'
 
 const rootDom = document.getElementById('root')
 if (rootDom === null) throw new Error('root element not found')
 
-setThemeWithoutRender()
+loadTheme()
 
 ReactDom.createRoot(rootDom).render(
   <React.StrictMode>
